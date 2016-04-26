@@ -1,0 +1,30 @@
+.MovieList {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+
+.MovieList__item {
+  margin: 0 1em; }
+
+.MovieList__card {
+  display: block;
+  max-width: 200px; }
+
+.MovieList__content.MovieList__content {
+  padding-top: 10px;
+  padding-bottom: 30px; }
+
+.MovieList__price {
+  margin-bottom: 1em; }
+
+.Carousel {
+  height: 350px; }
+  .Carousel .carousel {
+    margin-top: -100px; }

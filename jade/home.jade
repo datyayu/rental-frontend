@@ -1,0 +1,28 @@
+extends ./partials/base.jade
+
+block styles
+  link(rel="stylesheet", href="../css/home.css")
+
+block content
+  h3.red-text.text-darken-1 Recomendados
+  include ./partials/slider.jade
+
+  h3.red-text.text-darken-1 Nuevas peliculas
+  ul.MovieList
+    - for(var i = 0; i < 20; i++)
+      li.MovieList__item
+        div.MovieList__card.card.hoverable
+          div.card-image.waves-effect.waves-block.waves-light
+            a(href="/views/movie.html")
+              img.activator(src="../assets/sw.jpg")
+          div.MovieList__content.card-content
+            a(href="/views/movie.html")
+              span.card-title.activator.grey-text.text-darken-4.truncate Star Wars Episode
+            p.MovieList__price 
+              a.red-text.right(href="#!") $4.99
+            
+block scripts
+  script  
+    | $(document).ready(function(){
+    |   $('.carousel').carousel();
+    | });

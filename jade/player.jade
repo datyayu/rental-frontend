@@ -1,0 +1,25 @@
+extends ./partials/base.jade
+
+block styles
+  link(rel="stylesheet", href="../css/movie.css")
+
+block content
+  div.card-panel.Trailer
+    iframe.Trailer__player(
+      width="100%",
+      height="100%",
+      src="https://www.youtube.com/embed/sGbxmsDFVnE", 
+      frameborder="0" 
+      allowfullscreen
+    )
+    
+
+  div.card-panel.MovieInfo
+    img.MovieInfo__image.MovieInfo__image--small(src="../assets/sw.jpg")
+    div.MovieInfo__content
+      h3.MovieInfo__title Star Wars Episode VII
+      p.MovieInfo__duration.grey-text 138 minutos
+      p.MovieInfo__year.grey-text 2015
+      p.MovieInfo__genre 
+        a(href="#") Scifi,
+        a(href="#")  Action

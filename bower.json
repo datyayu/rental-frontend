@@ -1,0 +1,23 @@
+{
+  "name": "rental-frontend",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Arturo Coronel <aoitsu3@gmail.com>"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.2.3",
+    "Materialize": "materialize#^0.97.6",
+    "material-design-icons": "~2.2.3"
+  }
+}

@@ -1,0 +1,46 @@
+.BuyModal {
+  margin-top: 3em;
+  overflow-y: visible; }
+
+.BuyModal__content {
+  display: none;
+  position: relative; }
+  .BuyModal__content.is-active {
+    display: flex; }
+
+.BuyModal__image {
+  height: 300px;
+  max-width: 200px;
+  min-width: 200px;
+  margin-top: -3em;
+  margin-bottom: -3em;
+  overflow: auto; }
+
+.BuyModal__info {
+  flex: 1; }
+
+.BuyModal__title {
+  padding: 0;
+  margin: 0.2em 0.5em; }
+
+.BuyModal__price {
+  padding: 0;
+  margin: 0.2em 0.5em; }
+
+.BuyModal__preloader {
+  display: none;
+  height: 100%;
+  padding-top: 1em; }
+  .BuyModal__preloader.is-active {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+.BuyModal__confirmation,
+.BuyConfirm,
+.BuyButton {
+  display: none; }
+  .BuyModal__confirmation.is-active,
+  .BuyConfirm.is-active,
+  .BuyButton.is-active {
+    display: block; }

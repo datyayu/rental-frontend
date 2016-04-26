@@ -1,0 +1,29 @@
+div.navbar-fixed
+  ul#dropdown1.dropdown-content
+    li: a(href="/views/estrenos.html") Mis peliculas
+    li.divider
+    li: a(href="/views/home.html") Logout
+
+  nav.Navbar.red.darken-1
+    a.brand-logo(href="/views/home.html") Rental
+    
+    ul.right.hide-on-med-and-down
+      li: a(href="/views/home.html") Home
+      li: a(href="/views/estrenos.html") Estrenos
+      li: a(href="/views/movie.html") Random
+      li
+        a.dropdown-button(href="#!", data-activates="dropdown1")
+          | @Usuario
+          i.material-icons.right arrow_drop_down
+    
+    ul.side-nav#slide-out
+      li: a(href="/views/home.html") Home
+      li: a(href="/views/estrenos.html") Estrenos
+      li: a(href="/views/movie.html") Random
+      li: a(href="/views/estrenos.html") Mis peliculas
+      li.divider
+      li: a(href="/views/home.html") Logout
+
+    
+    a.button-collapse(href="#", data-activates="slide-out")
+      i.mdi-navigation-menu.material-icons menu

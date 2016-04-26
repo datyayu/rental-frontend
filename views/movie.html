@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es"></html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <title>Index</title>
+  <link rel="stylesheet" href="../bower_components/material-design-icons/www/css/material.css">
+  <link rel="stylesheet" href="../bower_components/Materialize/bin/materialize.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/movie.css">
+  <link rel="stylesheet" href="../css/modal.css">
+</head>
+<body>
+  <div class="navbar-fixed">
+    <ul id="dropdown1" class="dropdown-content">
+      <li><a href="/views/estrenos.html">Mis peliculas</a></li>
+      <li class="divider"></li>
+      <li><a href="/views/home.html">Logout</a></li>
+    </ul>
+    <nav class="Navbar red darken-1"><a href="/views/home.html" class="brand-logo">Rental</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="/views/home.html">Home</a></li>
+        <li><a href="/views/estrenos.html">Estrenos</a></li>
+        <li><a href="/views/movie.html">Random</a></li>
+        <li><a href="#!" data-activates="dropdown1" class="dropdown-button">@Usuario<i class="material-icons right">arrow_drop_down</i></a></li>
+      </ul>
+      <ul id="slide-out" class="side-nav">
+        <li><a href="/views/home.html">Home</a></li>
+        <li><a href="/views/estrenos.html">Estrenos</a></li>
+        <li><a href="/views/movie.html">Random</a></li>
+        <li><a href="/views/estrenos.html">Mis peliculas</a></li>
+        <li class="divider"></li>
+        <li><a href="/views/home.html">Logout</a></li>
+      </ul><a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu material-icons">menu</i></a>
+    </nav>
+  </div>
+  <div class="Content">
+    <div id="modal1" class="modal BuyModal">
+      <div class="modal-content BuyModal__content is-active"><img src="/assets/sw.jpg" class="BuyModal__image">
+        <div class="BuyModal__info">
+          <h2 class="BuyModal__title center-align black-text">Star Wars Episode VII</h2>
+          <h3 class="BuyModal__price right-align red-text">$4.99</h3>
+        </div>
+      </div>
+      <div class="BuyModal__preloader">
+        <div class="preloader-wrapper big active center-align">
+          <div class="spinner-layer spinner-red-only">
+            <div class="circle-clipper left">
+              <div class="circle"></div>
+            </div>
+            <div class="gap-patch">
+              <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+              <div class="circle"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-content BuyModal__confirmation">
+        <h1 class="center-align black-text">Compra exitosa!</h1>
+      </div>
+      <div class="modal-footer"><a id="BuyButton" href="#" class="is-active waves-effect waves-light btn-large hoverable red BuyButton">Comprar</a><a href="/views/player.html" class="waves-effect waves-light btn-large hoverable red BuyConfirm">Ver la pelicula</a></div>
+    </div>
+    <div class="card-panel MovieInfo"><img src="../assets/sw.jpg" class="MovieInfo__image">
+      <div class="MovieInfo__content">
+        <h3 class="MovieInfo__title">Star Wars Episode VII</h3>
+        <p class="MovieInfo__year grey-text">2015</p>
+        <p class="MovieInfo__duration grey-text">138 minutos</p>
+        <p class="MovieInfo__genre"> <a href="#">Scifi,</a><a href="#"> Action</a></p>
+        <p class="gray-text MovieInfo__description">
+          Visionary director J.J. Abrams brings to life the motion picture event of 
+          a generation. As Kylo Ren and the sinister First Order rise from the ashes 
+          of the Empire, Luke Skywalker is missing when the galaxy needs him most. 
+          It's up to Rey, a desert scavenger, and Finn, a defecting stormtrooper, to 
+          join forces with Han Solo and Chewbacca in a desperate search for the one 
+          hope of restoring peace to the galaxy.
+        </p>
+      </div><a href="#modal1" class="waves-effect waves-light btn-large hoverable red MovieInfo__button">Comprar</a>
+    </div>
+    <div class="card-panel Trailer">
+      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/sGbxmsDFVnE" frameborder="0" allowfullscreen class="Trailer__player"></iframe>
+    </div>
+  </div>
+  <script src="../bower_components/jquery/dist/jquery.js"></script>
+  <script src="../bower_components/Materialize/bin/materialize.js"></script>
+  <script type="text/javascript">
+     
+    $(".button-collapse").sideNav();
+    $(".dropdown-button").dropdown();
+  </script>
+  <script>
+     
+    $('.MovieInfo__button').leanModal()
+    $('#BuyButton').on('click', function() {
+      $('.BuyButton').removeClass('is-active');
+      $('.BuyModal__content').removeClass('is-active');
+      $('.BuyModal__preloader').addClass('is-active');
+      
+      setTimeout(function() {
+        $('.BuyModal__preloader').removeClass('is-active');
+        $('.BuyModal__confirmation').addClass('is-active');
+        $('.BuyConfirm').addClass('is-active');
+      }, 2000);
+    })
+  </script>
+</body>

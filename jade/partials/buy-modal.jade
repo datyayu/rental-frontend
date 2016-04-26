@@ -1,0 +1,27 @@
+div.modal.BuyModal#modal1
+  div.modal-content.BuyModal__content.is-active
+    img.BuyModal__image(src="/assets/sw.jpg")
+    div.BuyModal__info
+      h2.BuyModal__title.center-align.black-text Star Wars Episode VII
+      h3.BuyModal__price.right-align.red-text $4.99
+      
+  div.BuyModal__preloader
+    div.preloader-wrapper.big.active.center-align
+      div.spinner-layer.spinner-red-only
+        div.circle-clipper.left
+          div.circle
+        div.gap-patch
+          div.circle
+        div.circle-clipper.right
+          div.circle
+        
+  div.modal-content.BuyModal__confirmation
+    h1.center-align.black-text Compra exitosa!
+
+    
+  div.modal-footer
+    a.is-active.waves-effect.waves-light.btn-large.hoverable.red.BuyButton#BuyButton(href="#")
+      | Comprar
+    a.waves-effect.waves-light.btn-large.hoverable.red.BuyConfirm(href="/views/player.html")
+      | Ver la pelicula
+          

@@ -1,0 +1,45 @@
+.BuyModal
+  margin-top: 3em
+  overflow-y: visible
+
+.BuyModal__content
+  display: none
+  position: relative
+  &.is-active
+    display: flex
+
+.BuyModal__image
+  height: 300px
+  max-width: 200px
+  min-width: 200px
+  margin-top: -3em
+  margin-bottom: -3em
+  overflow: auto
+
+.BuyModal__info
+  flex: 1
+
+.BuyModal__title
+  padding: 0
+  margin: .2em .5em
+
+.BuyModal__price
+  padding: 0
+  margin: .2em .5em
+
+.BuyModal__preloader
+  display: none
+  height: 100%
+  padding-top: 1em
+
+  &.is-active
+    display: flex
+    justify-content: center
+    align-items: center
+
+.BuyModal__confirmation,
+.BuyConfirm,
+.BuyButton
+  display: none
+  &.is-active
+    display: block
