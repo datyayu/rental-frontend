@@ -8,6 +8,10 @@
   &.is-active
     display: flex
 
+  @media screen and (max-width: 680px)
+    flex-direction: column
+    align-items: center
+
 .BuyModal__image
   height: 300px
   max-width: 200px
@@ -16,6 +20,12 @@
   margin-bottom: -3em
   overflow: auto
 
+  @media screen and (max-width: 680px)
+    height: 150px
+    max-width: 100px
+    min-width: 100px
+    margin-bottom: 1em
+
 .BuyModal__info
   flex: 1
 
@@ -23,9 +33,15 @@
   padding: 0
   margin: .2em .5em
 
+  @media screen and (max-width: 680px)
+    font-size: 2em
+
 .BuyModal__price
   padding: 0
   margin: .2em .5em
+
+  @media screen and (max-width: 680px)
+    font-size: 2em
 
 .BuyModal__preloader
   display: none
@@ -36,6 +52,12 @@
     display: flex
     justify-content: center
     align-items: center
+
+.BuyButton.BuyButton.BuyButton.BuyButton,
+.BuyConfirm.BuyConfirm.BuyConfirm.BuyConfirm
+  @media screen and (max-width: 680px)
+    float: none
+    margin-top: -1em
 
 .BuyModal__confirmation,
 .BuyConfirm,

@@ -4,3 +4,6 @@
 .Content {
   width: 90%;
   margin: 1em auto; }
+  @media screen and (max-width: 680px) {
+    .Content {
+      max-width: 98%; } }

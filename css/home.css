@@ -12,10 +12,16 @@
 
 .MovieList__item {
   margin: 0 1em; }
+  @media screen and (max-width: 680px) {
+    .MovieList__item {
+      margin: 0; } }
 
 .MovieList__card {
   display: block;
   max-width: 200px; }
+  @media screen and (max-width: 680px) {
+    .MovieList__card {
+      max-width: 150px; } }
 
 .MovieList__content.MovieList__content {
   padding-top: 10px;

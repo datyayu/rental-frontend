@@ -1,6 +1,10 @@
 .MovieInfo {
   display: flex;
   position: relative; }
+  @media screen and (max-width: 680px) {
+    .MovieInfo {
+      flex-direction: column;
+      align-items: center; } }
 
 .MovieInfo__image {
   height: 300px;
@@ -14,6 +18,9 @@
   display: flex;
   flex-direction: column;
   padding: 0.5em 1em; }
+  @media screen and (max-width: 680px) {
+    .MovieInfo__content {
+      text-align: center; } }
 
 .MovieInfo__title {
   padding: 0;
@@ -36,6 +43,10 @@
   position: absolute;
   bottom: 25px;
   right: 25px; }
+  @media screen and (max-width: 680px) {
+    .MovieInfo__button {
+      position: static;
+      margin: 0 auto; } }
 
 .Trailer {
   width: 90vw;

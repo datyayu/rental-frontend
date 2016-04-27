@@ -7,6 +7,10 @@
   position: relative; }
   .BuyModal__content.is-active {
     display: flex; }
+  @media screen and (max-width: 680px) {
+    .BuyModal__content {
+      flex-direction: column;
+      align-items: center; } }
 
 .BuyModal__image {
   height: 300px;
@@ -15,6 +19,12 @@
   margin-top: -3em;
   margin-bottom: -3em;
   overflow: auto; }
+  @media screen and (max-width: 680px) {
+    .BuyModal__image {
+      height: 150px;
+      max-width: 100px;
+      min-width: 100px;
+      margin-bottom: 1em; } }
 
 .BuyModal__info {
   flex: 1; }
@@ -22,10 +32,16 @@
 .BuyModal__title {
   padding: 0;
   margin: 0.2em 0.5em; }
+  @media screen and (max-width: 680px) {
+    .BuyModal__title {
+      font-size: 2em; } }
 
 .BuyModal__price {
   padding: 0;
   margin: 0.2em 0.5em; }
+  @media screen and (max-width: 680px) {
+    .BuyModal__price {
+      font-size: 2em; } }
 
 .BuyModal__preloader {
   display: none;
@@ -35,6 +51,12 @@
     display: flex;
     justify-content: center;
     align-items: center; }
+
+@media screen and (max-width: 680px) {
+  .BuyButton.BuyButton.BuyButton.BuyButton,
+  .BuyConfirm.BuyConfirm.BuyConfirm.BuyConfirm {
+    float: none;
+    margin-top: -1em; } }
 
 .BuyModal__confirmation,
 .BuyConfirm,
