@@ -71534,6 +71534,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": false
 		},
+	"\/views\/navbar.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/views\/navbar.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/views\/slider.html": {
 		"fileType": 8192,
 		"ignore": 1,
