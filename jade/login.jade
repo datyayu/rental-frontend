@@ -1,0 +1,25 @@
+extends ./partials/base.jade
+
+block styles
+  link(rel="stylesheet", href="../css/form.css")
+
+block content
+  div.Login.row
+    div.card-panel.col.s12.push-m2.m8.push-l3.l6.Login__card
+      h1.align-text.center.Login__title Login
+      
+      form(action="#")
+        div.input-field.Login__input
+          i.material-icons.prefix account_circle
+          input#email.validate(type="email", required)
+          label(for="email" data-error="Formato incorrecto") Email
+        div.input-field.Login__input
+          i.material-icons.prefix lock
+          input#password.validate(type="password", required)
+          label(for="password") password
+        div.input-field.center.Login__input
+          input.waves-effect.waves-light.btn.red(type="submit")
+
+      p.Login__text.center
+        | ¿Eres nuevo? 
+        a.Login__link(href="./register.html") ¡Registrate!
